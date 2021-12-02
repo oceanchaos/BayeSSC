@@ -1,0 +1,808 @@
+<HTML><HEAD><TITLE>Serial Simcoal</TITLE>
+<?php
+$f=fopen("ssc.count","a");
+if($f) {
+  fwrite($f,strftime("%D %T\n",time()));
+  fclose($f);
+}
+?>
+<SCRIPT language=JavaScript type=text/JavaScript>
+function MM_swapImgRestore() { //v3.0
+	var i,x,a=document.MM_sr;
+	for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++)
+		x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+	var d=document;
+	if(d.images){
+		if(!d.MM_p) d.MM_p=new Array();
+		var i,j=d.MM_p.length,a=MM_preloadImages.arguments;
+		for(i=0; i<a.length; i++)
+       		if (a[i].indexOf("#")!=0){
+				d.MM_p[j]=new Image;
+				d.MM_p[j++].src=a[i];
+			}
+	}
+}
+
+function MM_findObj(n, d) { //v4.01
+	var p,i,x;
+	if(!d) d=document;
+	if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		d=parent.frames[n.substring(p+1)].document;
+		n=n.substring(0,p);
+	}
+
+	if(!(x=d[n])&&d.all) x=d.all[n];
+	for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+
+	if(!x && d.getElementById) x=d.getElementById(n);
+	return x;
+}
+
+function MM_swapImage() { //v3.0
+	var i,j=0,x,a=MM_swapImage.arguments;
+	document.MM_sr=new Array;
+	for(i=0;i<(a.length-2);i+=3)
+		if ((x=MM_findObj(a[i]))!=null){ document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</SCRIPT>
+
+<LINK href="styles.css" type=text/css rel=stylesheet>
+</HEAD>
+<BODY text=#330000 vLink=#66cc66 aLink=#00ff00 link=#009900 bgColor=#ffffff 
+leftMargin=0 topMargin=0 
+onload="MM_preloadImages('home_f2.jpg','about_f2.jpg','people_f2.jpg','courses_f2.jpg','projects_f2.jpg','resources_f2.jpg')" 
+marginheight="0" marginwidth="0">
+<TABLE cellSpacing=0 cellPadding=0 width=620 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=left colSpan=2><IMG src="logo4.jpg"></TD>
+    <TD colSpan=2>
+      <TABLE cellSpacing=0 cellPadding=0 width=500 border=0>
+        <TBODY>
+        <TR>
+          <TD colSpan=12><IMG height=35 alt="" src="titlebar_r1_c1.jpg" width=500 border=0 name=titlebar_r1_c1></TD></TR>
+        <TR>
+          <TD><IMG height=40 alt="" src="titlebar_r2_c1.jpg" 
+            width=13 border=0 name=titlebar_r2_c1></TD>
+          <TD><A onmouseover="MM_swapImage('home','','home_f2.jpg',1);" 
+            onmouseout=MM_swapImgRestore() 
+            href="http://www.stanford.edu/group/hadlylab/index.html"><IMG 
+            height=40 alt=home src="home.jpg" width=59 border=0 
+            name=home></A></TD>
+          <TD><IMG height=40 alt="" src="titlebar_r2_c3.jpg" 
+            width=17 border=0 name=titlebar_r2_c3></TD>
+          <TD><A href="http://www.stanford.edu/group/hadlylab/about.html"><IMG 
+            height=40 alt=about src="about_f2.jpg" width=51 border=0 
+            name=about></A></TD>
+          <TD><IMG height=40 alt="" src="titlebar_r2_c3.jpg" 
+            width=17 border=0 name=titlebar_r2_c5></TD>
+          <TD><A 
+            onmouseover="MM_swapImage('people','','people_f2.jpg',1);" 
+            onmouseout=MM_swapImgRestore() 
+            href="http://www.stanford.edu/group/hadlylab/people.html"><IMG 
+            height=40 alt=people src="people.jpg" width=62 border=0 
+            name=people></A></TD>
+          <TD><IMG height=40 alt="" src="titlebar_r2_c3.jpg" 
+            width=14 border=0 name=titlebar_r2_c7></TD>
+          <TD><A 
+            onmouseover="MM_swapImage('courses','','courses_f2.jpg',1);" 
+            onmouseout=MM_swapImgRestore() 
+            href="http://www.stanford.edu/group/hadlylab/courses.html"><IMG 
+            height=40 alt=courses src="courses.jpg" width=72 border=0 
+            name=courses></A></TD>
+          <TD><IMG height=40 alt="" src="titlebar_r2_c3.jpg" 
+            width=15 border=0 name=titlebar_r2_c9></TD>
+          <TD><A 
+            onmouseover="MM_swapImage('projects','','projects_f2.jpg',1);" 
+            onmouseout=MM_swapImgRestore() 
+            href="http://www.stanford.edu/group/hadlylab/projects.html"><IMG 
+            height=40 alt=projects src="projects.jpg" width=70 
+            border=0 name=projects></A></TD>
+          <TD><IMG height=40 alt="" src="titlebar_r2_c3.jpg" 
+            width=15 border=0 name=titlebar_r2_c11></TD>
+          <TD><A 
+            onmouseover="MM_swapImage('resources','','resources_f2.jpg',1);" 
+            onmouseout=MM_swapImgRestore() 
+            href="http://www.stanford.edu/group/hadlylab/resources.html"><IMG 
+            height=40 alt=resources src="resources.jpg" width=95 
+            border=0 name=resources></A></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD width=5 bgColor=#998e73>
+      <P>&nbsp;</P></TD>
+    <TD vAlign=top bgColor=#998e73><BR>
+      <P><A class=nav href="index.html#down">DOWNLOADS</A></P>
+      <P><A class=nav href="index.html#over">Overview</A></P>
+      <P><A class=nav href="index.html#IO">Input &amp; Output</A></P>
+      <P><A class=nav href="index.html#egs">Examples</A></P>
+      <P><A class=nav href="index.html#mods">Modifications</A></P>
+      <P><A class=nav href="index.html#shell">The SSC Shell</A></P>
+      <P><A class=nav href="index.html#FAQ">Support &amp; FAQ</A></P>
+      <P><A class=nav href="index.html#refs">Bibliography</A></P>
+      <P><A href="http://www.stanford.edu/" target=_blank><IMG src="SU.jpg" border=0></A><BR>
+		<A class=nav href="http://biology.stanford.edu/" target=_blank>Biological Sciences</A></P>
+	  <P>&nbsp;</P>
+      <P><A href="http://sio.ucsd.edu/" target=_blank><IMG src="sio.jpg" border=0></A><BR>
+		<A class=nav href="http://www.ucsd.edu/" target=_blank>at UC San Diego</A></P>	  
+    </TD>
+    <TD vAlign=top align=left width=20>&nbsp;</TD>
+    <TD vAlign=top align=left width=480>
+      <HR width="95%">
+
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD>
+            <P class=sectiontitle>Serial SimCoal Webpage</P>
+            <P class=subsectiontitle>from The Hadly Lab<BR>at Stanford University</P>
+		    <P class=subsectiontitle>Now hosted at<BR>
+				Scripps Institution of Oceanography</P>
+		  </TD>
+          <TD><IMG src="SimCoalLogo.jpg"></TD></TR></TBODY></TABLE>
+      <HR width="95%">
+
+      <P>&nbsp;</P>
+	<P> <H1>New version</H1> A Bayesian version of simcoal is now available <a href="BayeSSC.htm">here</a>.
+This flexible and powerful framework supercedes prior versions of Serial SimCoal, and will be the version that 
+is actively maintained and updated. </P>
+      <P>&nbsp;</P>
+      <P>&nbsp;</P>
+      <P class=sectiontitle>Citation</P>
+      <TABLE border=1>
+        <TBODY>
+        <TR>
+          <TD bgColor=#ff3333>
+            <P>IMPORTANT NOTE: Because this program owes so much to Excoffier's 
+            SIMCOAL (ver 1.0), we ask that users of Serial SimCoal cite 
+            Excoffier, <I>et al</I> in any publications.</P>
+            <UL>
+              <LI>Excoffier L, Novembre J and Schneider S (2000) SIMCOAL: a 
+              general coalescent program for simulation of molecular data in 
+              interconnected populations with arbitrary demography. <I>J. 
+              Hered.</I>, <B>91</B>, 506-509. 
+              <LI>Anderson CNK, Ramakrishnan U, Chan YL and Hadly EA (2005) Serial SimCoal: A population genetic 
+              model for data from multiple populations and points in time. <I>Bioinformatics</I>, <B>21</B>, 1733-1734.
+              <BR>
+      </LI></UL></TD></TR></TBODY></TABLE><A name=over>
+      <P class=sectiontitle>Overview</P></A>
+      <P>This program is a modification of <A class=text 
+      href="http://cmpg.unibe.ch/software/simcoal/">SIMCOAL 1.0</A>, a program 
+      written by <A class=text 
+      href="http://www.cmpg.unibe.ch/people/excoffier.htm">Laurent 
+      Excoffier</A>, <A class=text 
+      href="http://ib.berkeley.edu/labs/slatkin/novembre/">John Novembre</A>, 
+      and <A class=text href="http://www.plongeurs.ch/">Stefan Schneider</A>. 
+      The modifications were made explicitly to be backwards compatable with 
+      SIMCOAL 1.0, so any input file that worked for the original version will 
+      also work on Serial SimCoal. Their <A class=text 
+      href="http://cmpg.unibe.ch/software/simcoal/">website</A> presents the 
+      most thorough available documentation for the program, and should be 
+      regarded as authoritative. Again, all example files on their website, and 
+      any other input file that was written for SimCoal 1.0, will also be 
+      compatible with Serial Simcoal. After work on this project began, a new 
+      version (<A class=text 
+      href="http://cmpg.unibe.ch/software/simcoal2/">SimCoal2</A>) was released. 
+      Details can be found by following the links.</P>
+      <P><B>Serial Simcoal</B> was written to take the flexible SimCoal 1.0 
+      package and apply it to ancient DNA. Its chief contribution to the field 
+      is the capacity to analyze data samples collected from vastly different 
+      points in time AND different populations simultaneously. Several other 
+      minor <A class=text 
+      href="index.html#mods">modifications</A> 
+      have been made, and are enumerated below.</P>
+      <P>Like SIMCOAL 1.0, Serial SimCoal uses a two step approach to modeling. 
+      First, a hypothetical genealogy is constructed that relates all the 
+      samples from all the time points to each other. This is done by beginning 
+      in the present, and working backwards one generation at a time. Each 
+      generation (in each of the <I>i</I> populations), the number of current 
+      lineages is determined (those samples that come from a time nearer the 
+      present than the current time, OR their ancestors if they have already 
+      coalesced): <I>n<SUB>extant,i</SUB></I>. If the population size is 
+      <I>N<SUB>i</SUB></I>, then the probability of coalescence is:</P>
+      <CENTER><IMG src="eq1.gif"></CENTER>
+      <P>for haploid genes. After a genealogy has been constructed in this 
+      manner back to the most recent common ancestor, mutations are "sprinkled" 
+      onto the tree using a user-specified mutation model. Generally, the 
+      probability of mutation between nodes is proportional to the length of 
+      time between nodes. For a more thorough overview of coalescent theory, see 
+      Hudson 1990, or Kingman 1982. For more about the math and extentions of 
+      coalescent theory see Drummond <I>et al.</I> 2003.</P>
+      <P></P><IMG src="simcoal_div.jpg"> <A name=IO>
+      <P class=sectiontitle>Input and Output</P></A>
+      <P class=subsectiontitle>Schematic Representation</P>
+      <P>The program flow of Serial SimCoal can be summarized in the following 
+      figure:</P>
+      <CENTER><IMG src="schema.gif"></CENTER>
+      <P class=subsectiontitle>Input</P>
+      <P>As with SimCoal 1.0, only one input file is needed to run the 
+      simulation. The parameters used also remain the same with only one 
+      significant difference: the <B>Sample sizes</B> block includes four 
+      numbers per line, instead of just one. With that one exception, the 
+      following is an annotation of the "input file notation" section of the 
+      SimCoal 1.0 <A class=text 
+      href="http://cmpg.unibe.ch/software/simcoal/#Input%20file%20notation" 
+      target=new>Help Manual</A>.</P>
+      <TABLE border=1>
+        <TBODY>
+        <TR>
+          <TH>Order</TH>
+          <TH>Type</TH>
+          <TH>Explanation</TH></TR>
+        <TR>
+          <TD vAlign=top>
+            <P>0</P></TD>
+          <TD vAlign=top>
+            <P><B>Comments</B></P></TD>
+          <TD vAlign=top>
+            <P>In the example files, comments begin with a double slash. They 
+            don't need to, but it's probably good to distinguish them from lines 
+            that contain information used by the program. They can be no longer 
+            than one line, and you can leave the lines they appear on blank, but 
+            you <I>must</I> have one comment line before each of the following 
+            information lines. Since you need to leave the space anyway, it's 
+            probably a good idea to jot notes to yourself about what those 
+            numbers are, anyway.</P>
+            <P><B>Example:</B><BR><FONT face=courier>//This is a comment, what 
+            follows is a meaningful number:</FONT></P></TD></TR>
+        <TR>
+          <TD vAlign=top>
+            <P>1</P></TD>
+          <TD vAlign=top>
+            <P><B>Populations</B></P></TD>
+          <TD vAlign=top>
+            <P>Put the number of demes you wish to simulate after the first 
+            comment line, along with whatever text you want. <I>If you are using 
+            samples from more than one time point then the text following the 
+            number must include the words "with ancient"</I>.</P>
+            <P><B>Example 1:</B><BR><FONT face=courier>//Begining of SimCoal 
+            file:<BR>3 populations, no ancient samples</FONT></P>
+            <P><BR><B>Example 2:</B><BR><FONT face=courier>//Parameters for a 
+            SimCoal File:<BR>3 demes with ancient DNA data</FONT></P></TD></TR>
+        <TR>
+          <TD vAlign=top>
+            <P>2</P></TD>
+          <TD vAlign=top>
+            <P><B>Deme sizes:</B></P></TD>
+          <TD vAlign=top>
+            <P>One number per population representing the effective population 
+            size (<I>N<SUB>ef</SUB></I>)of that population.</P>
+            <P><B>Example:</B><BR><FONT face=courier>//Deme 
+            sizes:<BR>1000<BR>3200<BR>8743</FONT></P></TD></TR>
+        <TR>
+          <TD vAlign=top>
+            <P>3</P></TD>
+          <TD vAlign=top>
+            <P><B>Sample sizes:</B></P></TD>
+          <TD vAlign=top>
+            <P><B>Without ancient information:</B> One sample group per 
+            population is assumed. List the number of samples from each 
+            population</P>
+            <P><B>With ancient information:</B> An arbitrary number of sampling 
+            groups can be added to each population, and they can be pooled 
+            together in any combination for statistical analysis. The first line 
+            begins with the total number of sampling groups, and can end with 
+            any text you want. After that the format is: <BR>First: Number of 
+            individuals in sample <BR>Second: Age of the sample (in generations) 
+            <BR>Third: The number of the deme the sample belongs to (0,1,2,...) 
+            <BR>Fourth: Which stat group the sample group should be pooled 
+            with.</P>
+            <P><B>Example 1: No ancient data, three populations</B><BR><FONT 
+            face=courier>//Sample Sizes:<BR>20<BR>12<BR>31</FONT></P>
+            <P><BR><B>Example 2: Three populations with ancient 
+            data</B><BR><FONT face=courier>//blah blah blah: Samples, age, deme, 
+            stat group <BR>8 sample groups; that's quite a few 
+            <BR>10&nbsp;0&nbsp;&nbsp;&nbsp;0&nbsp;0 
+            <BR>10&nbsp;200&nbsp;0&nbsp;1 
+            <BR>10&nbsp;0&nbsp;&nbsp;&nbsp;1&nbsp;0 
+            <BR>2&nbsp;&nbsp;450&nbsp;1&nbsp;2 
+            <BR>10&nbsp;0&nbsp;&nbsp;&nbsp;2&nbsp;0 
+            <BR>10&nbsp;200&nbsp;2&nbsp;1 <BR>7&nbsp;&nbsp;450&nbsp;2&nbsp;2 
+            <BR>4&nbsp;&nbsp;450&nbsp;2&nbsp;3</FONT></P>
+            <P>In both examples, there are 20, 12 and 31 samples taken from 
+            three populations respectively. In the second example, 10 of the 
+            samples are recent in each population, the rest are ancient. The 20 
+            samples that are 200 generations old are pooled together for 
+            statistical calculations, and 9 of 13 450-generation-old samples are 
+            pooled. The last four will have their statistics calculated 
+            independently (just to show you that it's possible).</P></TD></TR>
+        <TR>
+          <TD vAlign=top>
+            <P>3</P></TD>
+          <TD vAlign=top>
+            <P><B>Growth rates:</B></P></TD>
+          <TD vAlign=top>
+            <P>This is the exponential growth parameter <I>r</I> in 
+            <I>N(t)=N</I>(0)<I>exp(<B>r</B>t)</I>. Enter one value per 
+            population. Negative values imply that the population is currently 
+            getting LARGER, because we simulate backward in time.</P>
+            <P><BR><B>Example: Two stable populations, one growing</B><BR><FONT 
+            face=courier>//Growth rates: <BR>0 <BR>0 <BR>-.02</P></FONT></TD></TR>
+        <TR>
+          <TD vAlign=top>
+            <P>4</P></TD>
+          <TD vAlign=top>
+            <P><B>Migration matrices:</P></B></TD>
+          <TD vAlign=top>
+            <P>Several matrices can be listed in the input file. The first line 
+            begins with the number of matrices (0 is fine). The next lines 
+            define the ratio of migrants from each deme to each deme; each 
+            migration matrix must be preceeded by a comment. The first migration 
+            matrix is assumed to represent the migration in the present (or at 
+            <I>t</I>=0). If you have more than population with no migration, 
+            then the demes will NEVER coalesce and you will get no 
+            information.</P>
+            <P><BR><B>Example: two migration matrices</B><BR><FONT 
+            face=courier>//Migration matrices, 0 means no migration ever <BR>2 
+            <BR>//Matrix 0: Deme 0-&gt;Deme 1&lt;-Deme 2 
+            <BR>0&nbsp;&nbsp;&nbsp;.01&nbsp;0 
+            <BR>.01&nbsp;0&nbsp;&nbsp;&nbsp;.01 
+            <BR>0&nbsp;&nbsp;&nbsp;.01&nbsp;0 <BR>//Matrix 1: Migration stopped 
+            <BR>0&nbsp;0&nbsp;0 <BR>0&nbsp;0&nbsp;0 <BR>0&nbsp;0&nbsp;0 
+            </P></FONT></TD><BR></TD></TR>
+        <TR>
+          <TD vAlign=top>
+            <P>5</P></TD>
+          <TD vAlign=top>
+            <P><B>Historical events:</B></P></TD>
+          <TD vAlign=top>
+            <P>Again, the first line lists the number of events (0 is fine). 
+            Then each subsequent line lists one such event (no comment lines 
+            between). An event consists of the following parameters: 
+            <OL>
+              <LI>The time (in generations) when the event occured 
+              <LI>The source deme (0,1,2...; if the event involves migration) 
+              <LI>The sink deme. 
+              <LI>The proportion of the source that migrates to the sink. It 
+              also represents the probability for each lineage remaining in the 
+              source deme to migrate in the sink deme. 
+              <LI>The new size of the sink deme <I>relative to what it is one 
+              generation later in time</I> (simulating backwards, remember). 
+              <LI>The new growth rate of the sink deme. 
+              <LI>The id of the new migration matrix to use <I>for all 
+              demes</I>. </LI></OL>
+            <P></P>
+            <P><BR><B>Example: 2000 generations ago, deme 0 and 2 split from 
+            deme 1</B><BR><FONT face=courier>//Event format: time, src, sink, % 
+            mig, new Ne, new r, new mig <BR>2000 0 1 1 1 0 1 <BR>2000 2 1 1 1 0 
+            1 </P></FONT></TD></TR>
+        <TR>
+          <TD vAlign=top>
+            <P>6</P></TD>
+          <TD vAlign=top>
+            <P><B>Mutation rate:</B></P></TD>
+          <TD vAlign=top>
+            <P>This number refers to the mutation rates for all loci taken as a 
+            whole. For DNA sequence, it should correspond to the average 
+            mutation rate per nucleotide times the number of nucleotides.</P>
+            <P><BR><B>Example: 1%/bp/million generations for a 300bp 
+            sequence</B> <BR>//Mutation rate <BR>.00003 </P></TD></TR>
+        <TR>
+          <TD vAlign=top>
+            <P>7</P></TD>
+          <TD vAlign=top>
+            <P><B>Number of loci:</B></P></TD>
+          <TD vAlign=top>
+            <P>For DNA, the length of the sequence to simulate. For RFLP and 
+            STRs, the number of RFLPs/STRs to simulate. Complete linkage is 
+            assumed.</P>
+            <P><BR><B>Example: A 300bp sequence</B> <BR>//Number of loci: 
+            <BR>300 </P></TD></TR>
+        <TR>
+          <TD vAlign=top>
+            <P>8</P></TD>
+          <TD vAlign=top width=100>
+            <P><B>Data type:</B></P></TD>
+          <TD vAlign=top>
+            <P>Type of data to simulate: 
+            <UL>
+              <LI>Microsatellites are simulated with a pure stepwise model with 
+              range constraints possible. 
+              <LI>DNA sequences can use a transition/transversion bias number, 
+              and can use the model explained in 9. 
+              <LI>RFLP data uses only a two allele model. </LI></UL>
+            <P></P>
+            <P><BR><B>Example: Using DNA with equal rates of transition and 
+            transversion</B> <BR>//Number of loci: <BR>DNA 1 </P></TD></TR>
+        <TR>
+          <TD vAlign=top>
+            <P>9</P></TD>
+          <TD vAlign=top width=100>
+            <P><B>Gamma shape parameter:</B></P></TD>
+          <TD vAlign=top>
+            <P>The first number is the shape parameter <FONT 
+            face=Symbol>a</FONT> of a Gamma distribution of mutation rates. If a 
+            value of zero is entered, then an even mutation rate model is 
+            implemented. The second number is the number of rate classes to 
+            simulate. If a value of zero is entered, then a continuous 
+            distribution is used (as many classes as there are loci or 
+            nucleotides).<BR>
+            <P><BR><B>Example: Simple, random mutation</B> <BR>//Gamma 
+            distribution for mutation: <BR>0 0 </P><BR></TD></TR></TBODY></TABLE>
+      <P class=subsectiontitle>Output</P>
+      <P>Most of the output from this program is the same as from SimCoal 1.0. 
+      That is, if you tell the program to run <I>B</I> simulations you will get: 
+
+      <UL>
+        <LI><I>B</I> Arlequin project files (*.arp) containing sequence 
+        information. This was meant to be used with the <A class=text 
+        href="http://lgb.unige.ch/arlequin/">Arlequin</A> program (also by 
+        Excoffier and company) to calculate statistics on large samples of 
+        genetic data. Each file contains the sequence/allele information for 
+        each sample in the simulation. 
+        <LI>An Arlequin batch file (*.arb) containing <I>B</I> links to the 
+        Arlequin project files above. 
+        <LI><I>B</I> Paup files (*.pau) containing sequence/allele information 
+        from each sample for each iteration, and also the resulting genealogical 
+        tree. This is in NEXUS format. 
+        <LI>One huge Paup file (*.pau) containing all the information from the 
+        <I>B</I> smaller Paup files above, and all <I>B</I> trees as well. 
+        <LI>A NEXUS batch file (*.bat) that contains links to all <I>B</I> of 
+        the paup files. 
+        <LI>One unique output file (*.gen) that lists all the input values and 
+        calculates a few statistics on the results. These include the mutation 
+        rate per locus, the mean and standard deviations of coalescence times, 
+        the number and standard deviation of pairwise differences, and the 
+        average and standard deviation of the number of mutations per genealogy. 
+
+        <LI>A file listing the number of mutations per locus 
+        (mut_hits_distr.sum) for each of the <I>B</I> simulations. 
+        <LI>Two genealogy files (*.trees) one listing the branch lengths using 
+        the true generation length (*_true_trees.trees) and one listing the 
+        branch lengths in number of mutations (*_mut_trees.trees). </LI></UL>
+      <P><A name=statfile>Serial SimCoal adds one more to this impressive list: 
+      a database of statistics (*_stat.csv) listing a number of genetic 
+      statistics for each iteration of the program. These are reported for each 
+      stat_group (as defined in the "Sample size" field of the input file), and 
+      for all samples combined. The statistics returned in this file include 
+</P>
+      <P><U>Within-StatGroup Statistics</U> 
+      <UL>
+        <LI>Number of alleles 
+        <LI>Number of private alleles. That is, for each allele in a stat_group, 
+        how many of the alleles are unique to individuals from one deme of the 
+        stat_group. For example, consider the following arrangmenent of alleles 
+        A-E.<BR>
+        <TABLE border=1 CELLPADDING=3>
+          <TBODY>
+	      <TR>
+            <TD></TD>
+            <TD>DEME 0:</TD>
+            <TD>DEME 1:</TD></TR>
+          <TR>
+      
+		  <TR>
+            <TD>stat_group 0</TD>
+            <TD>A, B, C</TD>
+            <TD>A, C, D</TD></TR>
+          <TR>
+            <TD>stat_group 1</TD>
+            <TD>A, B</TD>
+            <TD>A, D, E</TD></TR></TBODY></TABLE>For stat group 0, there are 
+        2 private alleles (B and D). In stat_group 1, there are 3 private 
+        alleles (B, D and E). In the combined stat_group, there is only 1 
+        private haplotype (E). All three results are in the output file. 
+        <LI>For STR and RFLP data: Heterozygosity 
+        <LI>For STR and RFLP data: Allelic variance 
+        <LI>For DNA: Segregating sites 
+        <LI>For DNA: Pairwise Differences 
+        <LI>For DNA: Haplotype Diversity (biased by a factor of (n-1)/n) 
+        <LI>For DNA: Nucleotide Diversity 
+        <LI>For DNA: Tajima's <I>D</I> 
+        <LI>For DNA: A Mismatch Distribution </LI>
+	  </UL>
+      <P></P>
+      <P><U>Between-StatGroup Statistics</U> 
+      <UL>
+        <LI>Number of alleles private to each stat group 
+        <LI>For DNA: Pairwise Differences 
+        <LI>For DNA: Mean Diversity (<IMG src="hsbar.gif">) 
+        <LI>For DNA: Pooled Diversity (H<SUB>T</SUB>) 
+        <LI>For DNA: F<SUB>ST</SUB> </LI>
+		<LI>And the number of generations to the most recent common ancestor (MRCA)
+	  </UL>
+      <P></P>
+      <P>This file can be opened using Microsoft Excel, or any other spreadsheet 
+      program. Most database and statistical programs also have a utility built 
+      in for reading comma separated value files (.csv). You can download a <A 
+      class=text 
+      href="http://www.stanford.edu/group/hadlylab/images/sample_stat.csv">sample 
+      file</A> here. This was produced by an input file with 3 stat groups, run 
+      50 times. This is a very small number of runs for statistical purposes. 
+      1000 to 10,000 are more typical minimum numbers (several
+	  published studies have done 1,000,000+ simulations).</P><IMG 
+      src="simcoal_div.jpg"> <A name=egs>
+      <P class=sectiontitle>Examples</P></A>
+      <P class=subsectiontitle>Example 1: Determining migration times</P>
+      <P>Let's say there are two populations of 25,000 that separated from a 
+      parent population of 25,000 a long time ago. Approximations from carbon 
+      samples put the time of separation at about 10,000 generations ago. 20 
+      fossil teeth from each population have been found and, 20 teeth have been 
+      taken from the current populations for 80 total samples. Based on 300bp of 
+      sequence information extracted from each of these samples, it is 
+      determined that 43% of the modern haplotypes are private, but that 70% of 
+      the ancient haplotypes were private. What does this say about migration 
+      between the populations? </P>
+      <P>First, has migration occured? To answer this question, you could test 
+      the null hypothesis that no migration has occured using the following 
+      input file: (<A class=text 
+      href="no_mig.par">no_mig.par</A>)</P>
+      <TABLE border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <P><FONT face=courier>//Input parameters for the coalescence 
+            simulation program : simcoal.exe<BR>2 populations with ancient 
+            data<BR>//Deme sizes (haploid number of 
+            genes)<BR>25000<BR>25000<BR>//Sample sizes, ages, deme, 
+            stat_grp<BR>4 sample groups<BR>20 0 0 0<BR>20 5000 0 1<BR>20 0 1 
+            0<BR>20 5000 1 1<BR>//Growth rates<BR>0<BR>0<BR>//Number of 
+            migration matrices : If 0 : No migration between 
+            demes<BR>0<BR>//Historical event: time, source, sink, % migr, new 
+            size, new growth, new mig matrix<BR>1 event<BR>10000 1 0 1 1 0 
+            0<BR>//Mutation rate per generation for the whole 
+            sequence<BR>0.00003<BR>//Number of loci<BR>300<BR>//Data type : 
+            either DNA, RFLP, or MICROSAT<BR>DNA 1<BR>//Mutation rates gamma 
+            distribution shape parameter<BR>0 0</FONT> 
+      </P></TD></TR></TBODY></TABLE><IMG src="nomig.gif" align=left> 
+      <P>If you then run Serial SimCoal, it will give you 1000 (or any other 
+      number) of values for the proportion of ancient and modern haplotypes that 
+      are private. They will be output into a *_stat.csv file, where the * 
+      represents the name of the input file. The results are displayed 
+      graphically at left, and the observed data is marked with a red dot. Since 
+      it lies outside the 95%-confidence polygon, we can reject the null 
+      hypothesis that no migration has occured.</P>
+      <P>Now, we explore the alternative hypotheses that (1) migration occured 
+      during the most recent 5000 generations, or (2) only during the 5000 
+      generations following the split, and no migration has occured since. The 
+      input file for the first of these looks like this: (<A class=text 
+      href="http://www.stanford.edu/group/hadlylab/images/recent_mig.par">recent_mig.par</A>, 
+      and <A class=text 
+      href="http://www.stanford.edu/group/hadlylab/images/ancient_mig.par">ancient_mig.par</A>)</P>
+      <TABLE border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <P><FONT face=courier>//Input parameters for the coalescence 
+            simulation program : simcoal.exe<BR>2 populations with ancient 
+            data<BR>//Deme sizes (haploid number of 
+            genes)<BR>25000<BR>25000<BR>//Sample sizes, ages, deme, 
+            stat_grp<BR>4 sample groups<BR>20 0 0 0<BR>20 5000 0 1<BR>20 0 1 
+            0<BR>20 5000 1 1<BR>//Growth rates<BR>0<BR>0<BR>//Number of 
+            migration matrices : If 0 : No migration between 
+            demes<BR>2<BR>//Migration matrix 0, a modest amount of gene flow to 
+            start<BR>0 .0002<BR>.0002 0<BR>//Migration matrix 1, no 
+            migration<BR>0 0<BR>0 0<BR>//Historical event: time, source, sink, % 
+            migr, new size, new growth, new mig matrix<BR>3 events<BR>5000 0 0 1 
+            1 0 0<BR>5000 1 1 1 1 0 0<BR>10000 1 0 1 1 0 0<BR>//Mutation rate 
+            per generation for the whole sequence<BR>0.00003<BR>//Number of 
+            loci<BR>300<BR>//Data type : either DNA, RFLP, or MICROSAT<BR>DNA 
+            1<BR>//Mutation rates gamma distribution shape parameter<BR>0 
+            0</FONT></P></TD></TR></TBODY></TABLE><IMG src="mig.jpg" 
+      align=right> 
+      <P>When the results of these three analyses are combined, the results can 
+      be extracted from the *_stat.csv files, and graphically interpreted as 
+      shown at right. This clearly provides strong support for the hypothesis 
+      that recent gene flow is responsible for the pattern that we see in the 
+      samples. More detailed analysis is possible, but this will serve as an 
+      introduction to the power of using this program together with ancient 
+      genetic information. The confidence polygons were drawn using a subroutine 
+      in R, and then graphically enhanced using Adobe Photoshop 6.0.</P>
+      <P class=subsectiontitle>Example 2: Declining genetic diversity</P>
+      <P>To demonstrate the level of complexity this program is capable of, let 
+      us consider the following situation. Fossils of a species have been 
+      recovered from a wide time scale and many different strata. The modern 
+      samples show no genetic diversity (younger than 1000 generations), and the 
+      ancient samples show high diversity. We are interested in determining the 
+      probability of seeing no genetic diversity in the modern at various 
+      constant population sizes. Below is an example of how to do this for a 
+      population of 1000. See the information on the Serial SimCoal Shell for 
+      how to quickly modify this file to include many other population sizes. 
+      (<A class=text 
+      href="http://www.stanford.edu/group/hadlylab/images/decline.par">decline.par</A>)</P>
+      <TABLE border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <P><FONT face=courier>//Input parameters for the coalescence 
+            simulation program : simcoal.exe<BR>1 population with ancient 
+            data<BR>//Deme sizes (haploid number of genes)<BR>1000<BR>//Sample 
+            sizes, ages, deme, stat_grp<BR>17 sample groups<BR>40 0 0 0<BR>1 1 0 
+            0<BR>1 100 0 0<BR>1 200 0 0<BR>2 250 0 0<BR>1 300 0 0<BR>2 360 0 
+            0<BR>2 500 0 0<BR>3 750 0 0<BR>1 900 0 0<BR>3 3293 0 1<BR>2 3749 0 
+            1<BR>2 5655 0 1<BR>5 5906 0 1<BR>1 6135 0 1<BR>1 8147 0 1<BR>6 10209 
+            0 1<BR>//Growth rates<BR>0<BR>//Number of migration matrices : If 0 
+            : No migration between demes<BR>0<BR>//Historical event: time, 
+            source, sink, % migr, new size, new growth, new mig 
+            matrix<BR>0<BR>//Mutation rate per generation for the whole 
+            sequence<BR>0.0000147<BR>//Number of loci<BR>365<BR>//Data type : 
+            either DNA, RFLP, or MICROSAT<BR>DNA 1<BR>//Mutation rates gamma 
+            distribution shape parameter<BR>0 0</FONT></P></TD></TR></TBODY></TABLE>
+      <P>If we then run this program many times at many different population 
+      sizes, we can collect the relative frequencies of different haplotype 
+      diversities at many population sizes. The probability surfaces are 
+      displayed in two different formats below. These show only the haploytpe 
+      diversities of the modern samples (stat_group=0). 
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD><IMG src="ex2_2.jpg"></TD>
+          <TD><IMG src="ex2_map.jpg"></TD></TR></TBODY></TABLE>
+      <P>This demonstrates that the probability of seeing zero haplotype 
+      diversity in the modern samples dramatically increase when population size 
+      drops below 10,000. Conversely large haplotype diversities (near 0.8) 
+      begin to become likely at about 80,000 individuals. However, extremely 
+      large populations would be required to achieve 0.9 diversity. A similar 
+      analysis could be performed for the ancient samples to evaluate the odds 
+      of seeing such a drop in genetic diversity without a change in population 
+      size. <IMG src="simcoal_div.jpg"> <A name=mods>
+      <P class=sectiontitle>Modifications</P></A>
+      <P>Aside from the changes necessary to make SimCoal 1.0 compatible with 
+      ancient genetic data, there were four other significant alterations made 
+      to the source code.
+      <P>
+      <P class=subsectiontitle>Statistics Package</P>
+      <P>As previously discussed, a statistics program was integrated into 
+      SimCoal itself so that relevent population statistics could be calculated 
+      on the fly, not in an ex post facto analysis in Arlequin or Paup. The 
+      statistics are output into a *_stat.csv file. For a description of the 
+      contents of this file, see the section on <A 
+      href="index.html#statfile">output</A>.</P>
+      <P class=subsectiontitle>Multiple Coalescences</P>
+      <P>The original version of SimCoal allowed only one coalescent event per 
+      generation. This assumption is a reasonably good approximation for 
+      situations where the population size (<I>N</I>) is much larger than the 
+      sample size (<I>k</I>). However there are situations where this assumption 
+      is not met, as demonstrated below.</P>
+      <P>The probability of a coalescent event occuring in a population of size 
+      <I>N</I> with <I>k</I> lineages is:<BR>
+      <CENTER><IMG src="kNeq1.gif"></CENTER>
+      <P></P>
+      <P>After these two lineages have coalesced, there are (<I>k</I>-1) 
+      lineages remaining, so the probability of one more coalescence is 
+      simply:<BR>
+      <CENTER><IMG src="kNeq2.gif"></CENTER>
+      <P></P>
+      <P>Thus the probability of two coalescent events occuring at the same time 
+      is [1]*[2], or<BR>
+      <CENTER><IMG src="kNeq3.gif"></CENTER>
+      <P></P>
+      <P>This equation can be greatly simplified by the following 
+      approximation:<BR>
+      <CENTER><IMG src="kNeq4.gif"></CENTER>
+      <P></P>
+      <P>This approximation is better than it may at first appear (the error is 
+      &lt;5% for <I>k</I>&gt;5 and &lt;1% for <I>k</I>&gt;10). The implication 
+      of formula [4] is that there is a 100% chance that more than one lineage 
+      will coalesce in each generation where: 
+      <CENTER><IMG src="kNeq5.gif"></CENTER>
+      <P></P>
+      <P>As a result, if condition [5] is ever met during a simulation, the 
+      program will surely produce a long-biased tree. Even if this condition is 
+      not met, the tree will still probably be biased longer than appropriate 
+      due to missing less frequent double or triple coalescences. This may 
+      translate into greater genotypic diversity than predicted.</P>
+      <P>This was changed in Serial SimCoal to allow as many coalescences per 
+      generation as was appropriate. After the first coalescence, the number of 
+      extant lineages is adjusted (decremented by one), and the probability of 
+      coalescence is recalculated. If a second coalescence occurs, again the 
+      probabilities are adjusted. This process continues until either a 
+      coalescence fails to occur (Unif(0,1)&gt;Pr(coalescence)) or the tree 
+      coalesces completely. Again, it should be noted that this bias has also 
+      been adjusted in Excoffier's new version of the program <A class=text 
+      href="http://cmpg.unibe.ch/software/simcoal2/">SimCoal2</A>.</P>
+      <P class=subsectiontitle>Hudsonian Process</P>
+      <P>We chose to modify SimCoal 1.0 because of its unusally good tolerance 
+      of ambiguities: you can have any amount of migration, any size of 
+      populations, any number of samples, and all of these can change 
+      arbitrarily at any time thanks to historical events. However, in almost 
+      every simulation there comes a time when (1) all historical events have 
+      occured, (2) deme size has ceased to fluctuate and (3) no migration is 
+      occurring. When these three conditions are met, the waiting time to the 
+      next coalescent event can be calculated extremely rapidly using a random 
+      exponential variable. R.R. Hudson was among the first to exploit this 
+      convenient property. In Serial SimCoal, we use a Hudsonian process in such 
+      situations. This is usually a profitable situation since these three 
+      conditions are usually only met near the root of the genealogy, when 
+      waiting times are very long. Thus, instead of generating several thousand 
+      random numbers for each generation, waiting for one to be small enough for 
+      the last few lineages to coalesce, each coalescence time is generated from 
+      just one random number. This process, when implemented with example 1, 
+      demonstrated a 67% gain in effeciency. In simpler situations, gains would 
+      be even greater.</P><IMG src="simcoal_div.jpg"> <A name=shell>
+      <P class=sectiontitle>The Serial SimCoal Shell</P></A>
+      <P>Coalescence is the fastest method of simulation available in almost all 
+      population studies. However, one of the most tedious processes associated 
+      with coalescence is making the input files to run the simulations. To 
+      speed up this process, a small shell program was written.</P>
+      <P>In Example 2 above, we wanted to investigate the effects of population 
+      size on haplotype diversity. To do this, we would need to run many input 
+      files through SimCoal that were exactly the same except for slightly 
+      different deme sizes on the third and fourth line. Retyping every single 
+      one of these files for such a minor change would be a chore, so the shell 
+      is a good alternative.</P>
+      <P>First, a template file should be written. In this case, Example 2 will 
+      do nicely.</P>
+      <P>Next, load the file in the Shell program (or drag the input file onto 
+      the Shell program) and it will print it out with line numbers and ask you 
+      how many "independent" variables you want to use. This means, how many 
+      effects are you interested in studying. In this case, we are only 
+      interested in the effects of population size, and we type "1". If we were 
+      also interested in the effects of sample size, and the timing of the split 
+      we could type "2" or "3", but this will do for now. 
+      <P>Then you are asked which line the value you wish to change is on. Enter 
+      the line number as shown on the printout. If there is more than one value 
+      on that line, you will be asked to specify which value on that line you 
+      wish to change. You will then be asked to specify the number of values you 
+      want to use instead, and allowed to enter them. 
+      <P>Finally you are asked to repeat this process for the dependent 
+      variables. In this case, we want both populations to have the same size, 
+      so we say there is one dependent variable, on line 4, and that it is equal 
+      to the value of the [0]th independent variable. Note that you can enter 
+      formulae here instead of values. For example, if we wanted to investigate 
+      the genetic diversity of our samples at 20 different population sizes and 
+      4 different split times (.5*N, 1*N, 2*N and 4*N), we could have put in two 
+      independent variables (one of which does not appear in the file, and so is 
+      on line "0"), and then said that the first historical event occurs at 
+      time="[0]*[1]". The operations that this program supports are addition 
+      (+), subtraction (-), multiplication (*), division (/), and exponentiation 
+      (^).</P>
+      <P>All the files will be output with appropriate file names based on the 
+      name of the template, and a batch file will also be output (*.batch). This 
+      batch file can be dragged onto the SimCoal program to run them all 
+      sequentially.</P><IMG src="simcoal_div.jpg"> <A name=FAQ>
+      <P class=sectiontitle>Support and FAQs</P></A>
+      <P>More questions and answers will be added to the list below as they come 
+      in. For now, if you have any problems with Serial SimCoal or The Serial 
+      SimCoal Shell, contact:</P>
+      <P><A class=text 
+      href="mailto:senka@ucsd.edu">mailto:senka@ucsd.edu</A></P></A>
+      <UL>
+        <LI><B>On a Mac, which program should I use to open SimCoal?</B> On some versions of MacOS-X you'll get an annoying message asking you which program to use to open the program. While we appreciate the metatextual irony, we have not been able to find a direct way around this problem. You will unfortunately need to work around it by executing directly from Terminal. <OL>
+<LI>Open "Terminal" from the applications folder.
+<LI>Type "cd" and the directory where you have serialsimcoal.exe.
+<LI>Type "./serialsimcoal.exe" to run the program. If you get a "Permission denied" error, type "chmod 777 serialsimcoal.exe" and try again.</OL>
+        <LI><B>Why can't SimCoal open my input files?</B> Some operating systems 
+        are unable to open files that have a space in the path name, like 
+        "C:\Documents And Settings\test.par". If you put your input files in the 
+        same directory as SimCoal, then you don't need to enter path information 
+        at all. 
+        <LI><B>Why can't SimCoal find my input file?</B> On Macintosh, UNIX 
+        executables always look for files on the desktop if you don't give them 
+        a path name, no matter where the program looking for the files is 
+        located. To bypass this built-in inconvinience, open terminal, go to the 
+        directory where SimCoal is located, and run it from there. (See detailed instructions for the first FAQ).</LI></UL><IMG 
+      src="simcoal_div.jpg"> <A name=down>
+      <P class=sectiontitle>Downloads</P></A>
+      <P class=subsectiontitle>Serial SimCoal</P>
+      <UL>
+        <LI><A class=text href="ssc.exe">Windows Executable (95, 98, 2000, NT, XP)</A> (606 KB) 
+        <LI><A class=text href="serialsimcoal.exe">Macintosh Executable (OS-X)</A> (476 KB) 
+        <LI><A class=text href="SSC_Code.zip">Source Code</A> (56 KB) </LI>
+      </UL>
+      <P>Updated: Nov 28, 2006</P>
+      <P class=subsectiontitle>The Serial SimCoal Shell</P>
+      <UL>
+        <LI><A class=text href="SSC_Shell.exe">Windows Executable (95, 98, 2000, NT, XP)</A> (116 KB) 
+        <LI><A class=text href="serialsimcoalshell.exe">Macintosh Executable (OS-X)</A> (70 KB) 
+        <LI><A class=text href="SSCShell_Code.zip">Source Code</A> (6 KB) </LI>
+      </UL>
+      <P>Updated: Feb 4, 2005</P><IMG src="simcoal_div.jpg"> 
+<A name=refs>
+      <P class=sectiontitle>Bibliography</P></A>
+      <UL>
+        <LI>Drummond AJ, OG Pybus, A Rambaut, R Forsberg, AG Rodrigo (2003) 
+        Measurably evolving populations. <I>Trends in Ecology and Evolution</I>, 
+        <B>18</B>:481-488. 
+        <LI>Hudson R (1990) Gene genealogies and the coalescent proces. In 
+        <I>Oxford Surveys in Evolutionary Biology</I> (Futuyma DJ and JD 
+        Antonovics, eds.), New York: Oxford University Press; p. 1-44. 
+        <LI>Kingman JFC (1982) The coalescent. <I>Stochastic Processes and their 
+        Applications</I>, <B>13</B>:235-248. </LI></UL>
+      <P>Funding for development of this program and website was received from 
+      NSF (grant DEB#0108541 to Liz Hadly and Joanna Mountain), as well as from 
+      the Stanford's Office of Technology and Licensing (OTL) via a Research 
+      Incentive Fund award to Joanna 
+Mountain.</P></TD></TR></TBODY></TABLE></BODY></HTML>

@@ -1,0 +1,42 @@
+P {
+	FONT-SIZE: 11px; COLOR: #330000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.sectiontitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #3e403d; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.subsectiontitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #998e73; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+LI {
+	FONT-SIZE: 11px; COLOR: #330000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.fineprint {
+	FONT-SIZE: 10px; COLOR: #330000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+A.nav:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #3e403d; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.nav:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #aaaaaa; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.nav:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #665f59; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.nav:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #aaaaaa; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.text:link {
+	FONT-SIZE: 11px; COLOR: #3e403d; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.text:visited {
+	FONT-SIZE: 11px; COLOR: #998e73; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.text:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #3e403d; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+TH.a {
+	TEXT-ALIGN: center; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: #998e73; COLOR: #330000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TD {
+	FONT-SIZE: 11px; COLOR: #330000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}

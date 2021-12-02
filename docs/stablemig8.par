@@ -1,0 +1,33 @@
+//Input parameters for the bayesian serial coalescence simulation program : BayesSSC.exe
+2 populations with ancient data
+//Deme sizes (haploid number of genes)
+{U:100,1000}
+{N:1000,200}
+//Sample sizes: # samples, age, deme, stat group
+2 sample groups
+183 0 0 0
+86 0 1 1
+//Growth rates
+0
+{ln([6]/[1])/2}
+//Number of migration matrices : If 0 : No migration between demes
+2
+// Matrix 0: modern migration between Prib and SMI
+0 {[7]}
+{[7]} 0
+// Matrix 1: no migration
+0 0
+0 0
+//Historical event format: time, src, sink, % mig, new Ne scaling factor for sink, new r, new mig matrix 
+1
+2 1 0 1 1 0 1 
+//Mutation rate per generation for the whole sequence
+{E:0.0001785}
+//Number of loci
+157
+//Data type : either DNA, RFLP, or MICROSAT
+DNA 0.96
+//Mutation rates: gamma parameters, theta and k
+0.6323 4
+{U:1,100}
+{U:0,1}
