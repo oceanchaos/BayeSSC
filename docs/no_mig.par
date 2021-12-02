@@ -1,0 +1,28 @@
+//Input parameters for the coalescence simulation program : simcoal.exe
+2 populations with ancient data
+//Deme sizes (haploid number of genes)
+25000
+25000
+//Sample sizes, ages, deme, stat_grp
+4 sample groups
+20 0 0 0
+20 5000 0 1
+20 0 1 0
+20 5000 1 1
+//Growth rates
+0
+0
+//Number of migration matrices : If 0 : No migration between demes
+0
+//Historical event: time, source, sink, % migr, new size, new growth, new mig matrix
+1 event
+10000 1 0 1 1 0 0
+//Mutation rate per generation for the whole sequence
+0.00003
+//Number of loci
+300
+//Data type : either DNA, RFLP, or MICROSAT
+DNA 1
+//Mutation rates gamma distribution shape parameter
+0 0 
+

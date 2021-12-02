@@ -1,0 +1,24 @@
+An example of input parameters for BayesSSC
+1 population with ancient data
+Deme sizes (haploid number of genes)
+3000
+Sample sizes: # samples, age, deme, stat group
+2 sample groups
+10 0 0 0
+10 300 0 1
+Growth rates
+{ln([4]/3000)/[2]}
+Number of migration matrices
+0
+Historical event: date from to %mig new_N new_r migmat
+1 event
+{U:1,299} 0 0 0 {3000/[4]} 0 0
+Mutations per generation for the whole sequence
+0.0003
+Number of loci
+300
+//Data type : either DNA, RFLP, or MICROSAT
+DNA 1
+//Mutation rates: gamma parameters, theta and k
+0 0
+{E:73}

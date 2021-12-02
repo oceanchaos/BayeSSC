@@ -1,0 +1,30 @@
+//Parameters for the coalescence simulation program : simcoal.exe
+2 populations with ancient DNA
+//Population effective sizes (number of genes)
+{U:5,500000}
+{[1]}
+//Samples sizes: JESS you'll need to partition these groups into the two demes
+8 sample groups
+47 0 0 0
+18 1500 0 1
+30 3500 0 2
+17 5250 0 3
+12 7500 0 4
+12 9000 0 5
+16 10500 0 6
+16 12500 0 7
+//Growth rates	: negative growth implies population expansion
+0
+Number of migration matrices
+0
+historical event: time, source, sink, migrants, new deme size, new growth rate, migration matrix index
+1 historical event
+{U:0,20000} 1 0 1 1 0 0
+Mutation rate per generation for the whole sequence
+0.0007872
+Number of loci
+615
+//data type either DNA, RFLP, or MICROSAT : If DNA, we need a second term for the transition bias
+DNA 0.792
+//Gamma parameter (if 0: even mutation rates, if >0 :shape parameter of the Gamma distribution
+0
